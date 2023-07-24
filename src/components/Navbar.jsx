@@ -18,15 +18,15 @@ const Navbar = () => {
             setToggleMenu(false)
             setToggleDropDown(false)
         }}>
-            <NavLink style={({isActive}) => isActive ? activeStyle : null} to={'/gym-album'}>場館環境</NavLink>
-            <NavLink style={({isActive}) => isActive ? activeStyle : null} to={'/about'}>關於我們</NavLink>
-            <NavLink style={({isActive}) => isActive ? activeStyle : null} to={'/coaches'}>教練團隊</NavLink>
-            <NavLink>
-                <li onClick={(e) => {
+            <li><NavLink style={({isActive}) => isActive ? activeStyle : null} to={'/gym-album'}>場館環境</NavLink></li>
+            <li><NavLink style={({isActive}) => isActive ? activeStyle : null} to={'/about'}>關於我們</NavLink></li>
+            <li><NavLink style={({isActive}) => isActive ? activeStyle : null} to={'/coaches'}>教練團隊</NavLink></li>
+            <li className='dropDown' onClick={(e) => {
                     e.stopPropagation();
                     e.preventDefault();
                     setToggleDropDown(prev => !prev)
-                }} className='dropDown'>課程介紹
+                }}><NavLink>
+                課程介紹
                     <FontAwesomeIcon id='sortDown' icon={faSortDown} />
                     <div className={`itemList ${toggleDropDown ? '' : 'hide'}`}>
                         <ul onClick={() => { setToggleMenu(false) }}>
@@ -38,11 +38,11 @@ const Navbar = () => {
                             <NavLink to={'/one-on-one'}><li>私人專業教練</li></NavLink>
                         </ul>
                     </div>
-                </li>
-            </NavLink>
-            <NavLink style={({isActive}) => isActive ? activeStyle : null} to={'/price'}>收費方式</NavLink>
-            <NavLink style={({isActive}) => isActive ? activeStyle : null} to={'/album'}>活動相簿</NavLink>
-            <NavLink to={'/'}>首頁</NavLink>
+                
+            </NavLink></li>
+            <li><NavLink style={({isActive}) => isActive ? activeStyle : null} to={'/price'}>收費方式</NavLink></li>
+            <li><NavLink style={({isActive}) => isActive ? activeStyle : null} to={'/album'}>活動相簿</NavLink></li>
+            <li><NavLink to={'/'}>首頁</NavLink></li>
         </ul>
     )
 
