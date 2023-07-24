@@ -11,12 +11,11 @@
     display:flex;
     align-items: center;
     cursor:pointer;
-    /* height:95%; */
     overflow:hidden;
 }
 #mainLogo {
-    height:60px;
-    width:60px; /*added to see if mobile-view bug is fixed */
+    height:100%;
+    width:60px; /*This is necessary for mobile version to view properly */
     object-fit: cover;
 }
 
