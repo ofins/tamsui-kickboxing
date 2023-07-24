@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding-inline:1em;
-    height:5%;
+    height:10%;
 }
 
 .navbar--container .logo {
@@ -12,6 +12,7 @@
     align-items: center;
     cursor:pointer;
     overflow:hidden;
+    height:95%;
 }
 #mainLogo {
     height:100%;
@@ -37,6 +38,7 @@
     padding:0;
     margin:0;
     overflow-x:hidden;
+    height:80vh;
 }
 .menu--container ul li {
     width:100%;
@@ -62,13 +64,16 @@
     position:relative;
 }
 .itemList {
-    position:fixed;
-    background-color: var(--color4);
-    width:9em;
-    right:0;
-    top:4.92%;
-    border-top:1px solid white;
-    border-radius: 0 0 5px 5px;
+    position:absolute;
+    background-color: var(--color2);
+    top:100%;
+    left:0;
+    height:190px;
+}
+.itemList ul li {
+    color:white;
+    height:30px;
+    font-family:'Outfit', sans-serif;
 }
 
 @media (min-width:768px) {
@@ -114,6 +119,7 @@
         padding:1em;
         border-top:1px solid white;
         border-radius: 0 0 5px 5px;
+        height:fit-content;
     }
     .itemList ul {
         display:flex;

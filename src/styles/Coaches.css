@@ -21,8 +21,6 @@
   margin: 0;
   margin-top: 0.5em;
 }
-.coaches--container .coach .context h1 {
-}
 .coaches--container .coach .context h1 span {
   color: var(--color2);
   font-size: 0.7em;
