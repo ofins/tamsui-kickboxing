@@ -16,6 +16,7 @@
 }
 #mainLogo {
     height:60px;
+    width:60px; /*added to see if mobile-view bug is fixed */
     object-fit: cover;
 }
 
