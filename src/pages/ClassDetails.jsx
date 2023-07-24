@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import classDetailsData from '../data/ClassDetails';
+import classDetailsData from '../data/classDetails'
 import '../styles/ClassDetails.css'
 import ReserveButton from '../components/ReserveButton';
 
