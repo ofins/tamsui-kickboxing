@@ -1,0 +1,82 @@
+.coaches--container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.coaches--container .coach {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
+  margin-top: 1em;
+  margin-bottom: 4em;
+  max-width: 500px;
+}
+.coaches--container .coach .context {
+  width: 90%;
+}
+.coaches--container .coach .context h1,
+.coaches--container .coach .context h3 {
+  margin: 0;
+  margin-top: 0.5em;
+}
+.coaches--container .coach .context h1 {
+}
+.coaches--container .coach .context h1 span {
+  color: var(--color2);
+  font-size: 0.7em;
+  margin-left: 0.5em;
+}
+.coaches--container .coach .context .lessons {
+  display: flex;
+  gap: 0.5em;
+  color: var(--color2);
+}
+
+.coaches--container .coach .portrait img {
+  box-shadow: var(--bs-1);
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: left;
+  max-width: 400px;
+}
+
+.coaches--container .coach .lessons button {
+  background-color: transparent;
+  border: 1px solid var(--color6);
+  height: 40px;
+  width: 85px;
+  border-radius: 5px;
+  color: var(--color6);
+  margin-block: 1em;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.coaches--container .coach .lessons button:hover {
+  background-color: var(--color6);
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .coaches--container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .coaches--container .coach .context {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .coaches--container .coach .context {
+    width: 70%;
+  }
+  .coaches--container .coach .context .certificates p {
+    font-size:16px;
+  }
+}

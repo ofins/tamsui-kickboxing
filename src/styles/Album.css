@@ -1,0 +1,25 @@
+.album--container {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:0.3em;
+    overflow:hidden;
+    padding:0.3em;
+}
+
+.album--container img {
+    object-fit: cover;
+    /* border:1px solid red; */
+    aspect-ratio: 1;
+    /* margin:0.1em; */
+}
+
+@media (min-width:768px) {
+    .album--container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width:1400px) {
+    .album--container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

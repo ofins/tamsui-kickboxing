@@ -1,0 +1,112 @@
+/* import fonts: Chakra Petch, GFS Didot, Inter, Notable, Noto Sans, Outfit */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;700&family=GFS+Didot&family=Inter&family=Notable&family=Noto+Sans:wght@400;500;700&family=Outfit:wght@400;600;700&display=swap');
+
+@font-face {
+  font-family: HanWanMingBlack;
+  src: local("HanWanMingBlack"),
+    url("./fonts/HanWangMingBlack-Regular.ttf") format(truetype);
+}
+
+:root {
+  --color1: #000;
+  --color2: #52616b;
+  --color3: #787b7d;
+  --color4: #c9d6df;
+  --color5: #f0f5f9;
+  --color6: #4E4FEB;
+  --colorStudio: #FF4C00;
+
+  --font-h1: 'HanWanMingBlack';
+  --font-h2: 'Outfit';
+  --fs-h1:40px;
+  --fs-h2:32px;
+  --fs-h3:20px;
+
+  --tabletfs-navlist:16px;
+
+  --deskfs-navlist:20px;
+  --deskfs-text:24px;
+  --deskfs-h2:54px;
+
+--bs-1: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+--bs-2: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--color5);
+}
+
+img {
+  width:100%;
+}
+
+a {
+  color: var(--color1);
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "HanWanMingBlack", sans-serif;
+  font-size: 40px;
+  font-weight:400;
+}
+h2 {
+  font-family: "HanWanMingBlack", sans-serif;
+  font-size: 32px;
+  font-weight:400;
+
+}
+h3 {
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+}
+p {
+  font-family: 'Outfit', sans-serif;
+  font-size:14px;
+  color: var(--color3);
+}
+
+.hide {
+  visibility: hidden;
+  opacity:0;
+}
+.show {
+  display:flex;
+}
+
+.pointerOff {
+  pointer-events: none;
+}
+
+.homeLayout--container {
+  height:100vh;
+}
+
+.studioName {
+  color: var(--colorStudio);
+}
+
+.reserveBtn {
+  font-family: var(--font-h1);
+  color: white;
+  background-color: var(--color6);
+  font-size: 20px;
+  border-style: none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  height: 150px;
+  width: 30px;
+  top: 30%;
+  border-radius: 2px 0 0 2px;
+  padding:1em;
+}
+
+* {
+  /* border: 1px solid green; */
+}
