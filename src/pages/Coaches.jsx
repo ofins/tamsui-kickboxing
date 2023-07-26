@@ -3,12 +3,13 @@ import '../styles/Coaches.css'
 import ReserveButton from '../components/ReserveButton'
 import coachesData from '../data/coaches'
 import { useNavigate } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const Coaches = () => {
   const navigate = useNavigate();
 
   const coachList = coachesData.map(coach => (
-    <div className="coach">
+    <div data-aos="fade-right" className="coach">
       <div className="portrait">
         <img src={coach.imageURL} alt={`photo of ${coach.name}`} />
       </div>

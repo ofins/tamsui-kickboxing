@@ -4,12 +4,13 @@ import priceData from '../data/price'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import ReserveButton from '../components/ReserveButton'
+import { motion } from 'framer-motion'
 
 const Price = () => {
   return (
     <div className="price--container">
       {priceData.map(price => (
-        <div className="price">
+        <div data-aos="zoom-in" className="price">
           <div className='title'>
             <h1>{price.plan}</h1>
             <h3>NT${price.price}</h3>

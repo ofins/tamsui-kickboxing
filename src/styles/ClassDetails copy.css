@@ -1,0 +1,109 @@
+.classDetails--container {
+    /* height:200vh; */
+    width:95%;
+    margin-inline:auto;
+}
+
+.classDetails--container .content {
+    height:50%;
+    padding-top:1em;
+    margin-block:5em;
+}
+
+.classDetails--container .content .boards {
+    display:flex;
+    justify-content: space-between;
+    height:80%;
+    position:relative;
+    max-width:450px;
+    /* max-height:400px; */
+    aspect-ratio: 1;
+}
+
+.classDetails--container .content .boards .board {
+    width:30%;
+    height:100%;
+    background-color: var(--color2);
+}
+.board.left {
+}
+.board.mid {
+    opacity: .6;
+}
+.board.right {
+    opacity: .3;
+}
+
+.classDetails--container .content .boards img {
+    background-color: transparent;
+    position:absolute;
+    bottom:0;
+    object-fit: cover;
+    width:80%;
+    max-width:550px;
+    left:50%;
+    transform: translateX(-50%);
+    -webkit-filter: drop-shadow(-15px 0px 4px rgba(53, 53, 53, 0.8));
+}
+
+.classDetails--container .content .title p {
+    font-weight:bold;
+    color: var(--color2);
+}
+.classDetails--container .content .title h1 {
+    color: var(--color2);
+    font-weight:400;
+}
+
+.classDetails--container .gallery .imageContainer {
+    background-color: white;
+    box-shadow: var(--bs-2);
+    padding:0.5em;
+    margin-block:1em;
+}
+
+.classDetails--container .gallery img {
+    aspect-ratio: 1.5;
+    object-fit: cover;
+    max-width:600px;
+    box-shadow: var(--bs-1);
+}
+
+@media (min-width:768px) {
+    .classDetails--container .content {
+        display:flex;
+        justify-content: center;
+    }
+    .classDetails--container .content .boards {
+        width:70%;
+    }
+    .classDetails--container .content .title {
+        width:40%;
+        margin-left:-2em;
+    }
+    .classDetails--container .content .title h1 {
+        font-size:76px;
+    }
+    .classDetails--container .gallery {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:1.5em;
+        overflow:hidden;
+    }
+}
+
+@media (min-width:1024px) {
+    .classDetails--container .content .title p {
+        font-size:20px;
+    }
+    .classDetails--container .content .boards {
+        max-width:600px;
+    }
+}
+
+@media (min-width:1400px) {
+    .classDetails--container .gallery {
+        width:80%;
+        margin-inline:auto;
+    }
+}

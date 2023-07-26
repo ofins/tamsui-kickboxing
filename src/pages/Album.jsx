@@ -6,7 +6,7 @@ const Album = () => {
   const photoList = []
 
   function renderPhoto () {
-    for(let i = 1; i < 20 ; i++) {
+    for(let i = 1; i < 17 ; i++) {
       photoList.push(i)
     }
     return photoList
@@ -17,7 +17,7 @@ const Album = () => {
   return (
     <div className="album--container">
       {photoList.map(image => (
-        <img src={`./images/${image}.jpg`} alt={`photo of ${image}`} />
+        <img data-aos="zoom-in" src={`./images/${image}.jpg`} alt={`photo of ${image}`} />
       ))}
       <ReserveButton/>
     </div>

@@ -36,6 +36,7 @@ const Navbar = () => {
                             <NavLink to={'/sanda'}><li>散打</li></NavLink>
                             <NavLink to={'/kid-sanda'}><li>兒童散打</li></NavLink>
                             <NavLink to={'/one-on-one'}><li>私人專業教練</li></NavLink>
+                            <NavLink to={'/advance'}><li>進階班</li></NavLink>
                         </ul>
                     </div>
                 
@@ -48,9 +49,11 @@ const Navbar = () => {
 
     return (
         <>
+            {/* create a dummyNavbar to offset the fixed position of navbar container */}
+            <div className="dummyNavbar"></div>
             <div className="navbar--container">
                 <div onClick={() => navigate("/")} className="logo">
-                    <img id='mainLogo' src="./images/16.jpg" alt="logo" />
+                    <img id='mainLogo' src="./images/logo-main.jpg" alt="logo" />
                 </div>
                 <div className="navList">
                     {navList}

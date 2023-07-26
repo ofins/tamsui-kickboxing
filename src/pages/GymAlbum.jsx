@@ -5,38 +5,49 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleChevronRight, faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
 const GymAlbum = () => {
-  const photoList = ['1', '2', '3', '4', '5', '6', '7']
+  //photoList is the total amount of photos we have in the collection. 
+  const photoList = ['1', '2', '3', '4', '5', '6']
 
   const [last, setLast] = useState(0)
+
+  //create handleNext and handlePrev button to go to next or previous photos
   const handleNext = () => {
     if(last === photoList.length - 1) {
-      setLast(0)
+      return setLast(0)
     }
-    setLast(prev => prev + 1)
+    return setLast(prev => prev + 1)
   }
 
   const handlePrev = () => {
     if(last === 0) {
-      setLast(photoList.length - 1)
+      return setLast(photoList.length - 1)
     }
-    setLast(prev => prev - 1)
+    return setLast(prev => prev - 1)
   }
 
-  let filteredArr = []
+  //declare filteredArr 
+  const filteredArr = []
+
+  //current index is equal to last
+  let currentIndex = last
+
+  //setup a function to run the rendered 4 photos at the bottom whenever the state updates
   function renderPhotoList() {
-    for (let i = last + 2; i < last + 6; i++) {
-      filteredArr.push(i)
+    //loop the photos four times always
+    for ( let i = 0 ; i < 4 ; i++) {
+      //using remainder, we can ensure that nextIndex is always smaller than the length of photoList
+      const nextIndex = (currentIndex + i) % photoList.length
+      filteredArr.push(photoList[nextIndex])  
     }
-    return filteredArr;
+    currentIndex = (currentIndex + 1) % photoList.length
   }
+  
   renderPhotoList();
-
-  console.log(last)
 
   return (
     <div className="gymAlbum--container">
       <div className="mainFrame">
-        <img src={`./images/${photoList[last]}.jpg`} />
+        <img src={`./images/g${photoList[last]}.jpg`} />
         <div className="btn-elements">
           <button onClick={handlePrev}><FontAwesomeIcon icon={faCircleChevronLeft} /></button>
           <button onClick={handleNext}><FontAwesomeIcon icon={faCircleChevronRight} /></button>
@@ -44,7 +55,7 @@ const GymAlbum = () => {
       </div>
       <div className="gallery">
         {filteredArr.map(image => (
-          <img src={`./images/${image}.jpg`} alt={`photo of ${image}`} />
+          <img src={`./images/g${image}.jpg`} alt={`photo of ${image}`} />
         ))}
       </div>
     </div>

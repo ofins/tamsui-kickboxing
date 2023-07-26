@@ -1,3 +1,7 @@
+.dummyNavbar {
+    height:7%;
+    width:100%;
+}
 .navbar--container {
     background-color: var(--color1);
     display:flex;
@@ -5,6 +9,10 @@
     align-items: center;
     padding-inline:1em;
     height:10%;
+    position:fixed;
+    width:90%;
+    z-index:10;
+    top:0;
 }
 
 .navbar--container .logo {
@@ -68,7 +76,7 @@
     background-color: var(--color2);
     top:100%;
     left:0;
-    height:190px;
+    height:224px;
 }
 .itemList ul li {
     color:white;
@@ -137,9 +145,23 @@
     }
 }
 
+@media (min-width:375px) {
+    .navbar--container {
+        width:92%;
+    }
+}
+@media (min-width:425px) {
+    .navbar--container {
+        width:93%;
+    }
+}
+
 @media (min-width:1024px) {
     .navList ul a {
         font-size:16px;
+    }
+    .navbar--container {
+        width:95%;
     }
 }
 

@@ -16,20 +16,17 @@ const ClassDetails = () => {
         <div className="classDetails--container">
             <div className="content">
                 <div className="boards">
-                    <div className="board left"></div>
-                    <div className="board mid"></div>
-                    <div className="board right"></div>
-                    <img src={lesson.mainImage} alt={`image of ${lesson.english_title}`} />
+                    <img data-aos="fade-in" src={lesson.mainImage} alt={`image of ${lesson.english_title}`} />
                 </div>
                 <div className="title">
-                    <h1>{lesson.title}</h1>
-                    <p>{lesson.description}</p>
+                    <h1 data-aos="fade-left">{lesson.title}</h1>
+                    <p data-aos="fade-right">{lesson.description}</p>
                 </div>
             </div>
             <div className="gallery">
                 {lesson.gallery.map(item => (
-                    <div className="imageContainer">
-                        <img src={`./images/${item}.jpg`} alt={`photo of ${item}`} />
+                    <div data-aos="slide-up" className="imageContainer">
+                        <img src={`./images/${lesson.class}-${item}.jpg`} alt={`photo of ${item}`} />
                     </div>
                 ))}
             </div>

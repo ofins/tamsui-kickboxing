@@ -20,7 +20,7 @@
     /* height:500px; */
     aspect-ratio: 1.5;
     object-fit: cover;
-    max-width:800px;
+    max-width:1000px;
     box-shadow: var(--bs-2);
 }
 .gymAlbum--container .mainFrame .btn-elements {
