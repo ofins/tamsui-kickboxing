@@ -42,6 +42,11 @@
 .footer--container .sec-B p {
     color:white;
 }
+.footer--container .sec-dummy {
+    height:40px;
+    width:100%;
+    background-color: transparent;
+}
 
 @media (min-width:768px) {
     .footer--container .sec-A {

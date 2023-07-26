@@ -33,6 +33,7 @@ const Footer = () => {
                 <p>Terms and Services</p>
                 <p>Design by <span className='studioName'>jackwang.Studio</span></p>
             </div>
+            <div className="sec-dummy"></div>
         </div>
     )
 }
