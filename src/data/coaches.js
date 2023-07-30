@@ -18,7 +18,7 @@ const coachesData = [
             "中華民國踢拳道協會C級教練",
             "兒童防身術C級教練",
         ],
-        imageURL: "./images/13.jpg",
+        imageURL: "./images/wen.jpg",
     },
     {
         name: "小豪",
@@ -32,7 +32,7 @@ const coachesData = [
             "2022年泰拳中正盃壯年71+無限量級亞軍",
             "台灣婦幼人身安全防護協會 理長",
         ],
-        imageURL: "./images/13.jpg",
+        imageURL: "./images/hao.jpg",
     },
     {
         name: "之翰",
@@ -45,7 +45,7 @@ const coachesData = [
             "WBC泰拳體適能教練證",
             "WAKO踢拳道國際級認證黑帶二段",
         ],
-        imageURL: "./images/13.jpg",
+        imageURL: "./images/zhihan.jpg",
     },
     {
         name: "秀",
@@ -58,7 +58,7 @@ const coachesData = [
             "WAKO踢拳道國際級認證黑帶二段",
             "WAKO踢拳擊C級裁判",
         ],
-        imageURL: "./images/13.jpg",
+        imageURL: "./images/show.jpg",
     },
     // {
     //     name: '阿寶',

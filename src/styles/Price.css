@@ -1,4 +1,4 @@
-.price--container {
+.price--subContainer {
     display:grid;
     grid-template-columns: repeat(1, 1fr);
     place-items: center;
@@ -6,7 +6,7 @@
     padding-top:1em;
 }
 
-.price--container .price {
+.price--subContainer .price {
     /* border:1px solid rgba(0,0,0,0.5); */
     box-shadow: var(--bs-2);
     width:95%;
@@ -20,29 +20,29 @@
     border-radius:10px;
 }
 
-.price--container .price .title {
+.price--subContainer .price .title {
     text-align: center;
 }
 
-.price--container .price h1 {
+.price--subContainer .price h1 {
     margin:0;
-    font-size: var(--deskfs-h2);
+    font-size: 40px;
     letter-spacing: 0.1em;
 }
 
-.price--container .price h3 {
+.price--subContainer .price h3 {
     font-size: var(--fs-h1);
     margin:0;
     margin-top:0.3em;
     color: var(--color6);
 }
 
-.price--container .price .details {
+.price--subContainer .price .details {
     display:flex;
     flex-direction: column;
 }
 
-.price--container .price .details span {
+.price--subContainer .price .details span {
     font-size: var(--deskfs-text);
     font-weight:bold;
     margin-block:0.3em;
@@ -53,8 +53,15 @@
     margin-right:0.3em;
 }
 
+.price--description {
+    text-align: center;
+}
+.price--description h2 {
+    color: linear-gradient(0DEG, black, red)
+}
+
 @media (min-width:1024px) {
-    .price--container {
+    .price--subContainer {
         grid-template-columns: repeat(3, 1fr);
         height:80vh;
         /* gap:0; */

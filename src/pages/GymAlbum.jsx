@@ -54,8 +54,8 @@ const GymAlbum = () => {
         </div>
       </div>
       <div className="gallery">
-        {filteredArr.map(image => (
-          <img src={`./images/g${image}.jpg`} alt={`photo of ${image}`} />
+        {filteredArr.map((image, index) => (
+          <img key={index} src={`./images/g${image}.jpg`} alt={`photo of ${image}`} />
         ))}
       </div>
     </div>

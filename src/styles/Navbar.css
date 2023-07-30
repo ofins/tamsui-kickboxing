@@ -81,7 +81,7 @@
 .itemList ul li {
     color:white;
     height:30px;
-    font-family:'Outfit', sans-serif;
+    font-family: 'Outfit', sans-serif;
 }
 
 @media (min-width:768px) {
@@ -104,8 +104,11 @@
         list-style: none;
         width:100%;
         justify-content: space-around;
-        align-items: center;
+        /* align-items: center; */
         z-index:10;
+    }
+    .navList ul li {
+        height:100%;
     }
     .navList ul a {
         color:white;
@@ -120,13 +123,14 @@
     }
     .itemList {
         position:absolute;
-        background-color: black;
-        width:9em;
+        background-color: white;
+        width:150%;
         left:0;
-        top:185%;
+        top:120%;
         padding:1em;
-        border-top:1px solid white;
-        border-radius: 0 0 5px 5px;
+        /* border-top:1px solid white; */
+        box-shadow: var(--bs-1);
+        border-radius: 5px;
         height:fit-content;
     }
     .itemList ul {
@@ -139,6 +143,12 @@
     }
     .itemList ul li {
         margin-block:0.3em;
+        color: black;
+        font-family:'HanWanMingBlack';
+    }
+    .itemList ul li:hover {
+        background-color: var(--color6);
+        color:white;
     }
     #bar {
         height:30px;
@@ -170,6 +180,6 @@
         font-size: var(--deskfs-navlist);
     }
     .itemList {
-        top:190%;
+        top:170%;
     }
 }

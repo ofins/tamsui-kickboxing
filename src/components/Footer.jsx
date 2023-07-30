@@ -9,6 +9,7 @@ const Footer = () => {
             <div className="sec-A">
                 <div className="logo">
                     <img src="./images/logo-main.jpg" alt="logo" />
+                    <img id='fuyo' src="./images/fuyo_logo1.png" alt="logo" />
                 </div>
                 <div className="contact">
                     <div className="address">
@@ -21,7 +22,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="social-icons">
-                    <a href='https://www.instagram.com/tamsui_kickboxing/' target='_blank'>
+                    <a href='https://liff.line.me/1645278921-kWRPP32q/?accountId=qnl8292y' target='_blank'>
                         <img src="./svg/line.png" alt="line-icon" />
                     </a>
                     <a href='https://www.facebook.com/TamsuiKB' target='_blank'><img src="./svg/fb.png" alt="facebook-icon" /></a>
@@ -29,9 +30,9 @@ const Footer = () => {
                 </div>
             </div>
             <div className="sec-B">
-                <p>@ 功夫門人 2023. All Rights Reserved</p>
-                <p>Terms and Services</p>
-                <p>Design by <span className='studioName'>jackwang.Studio</span></p>
+                <p>&copy; 功夫門人 2023. All Rights Reserved.</p>
+                {/* <p>Terms and Services</p> */}
+                <p>Design by <a id='studio_link' target='_blank' href='https://www.instagram.com/jackwang.studio' className='studioName'>jackwang.Studio</a></p>
             </div>
             <div className="sec-dummy"></div>
         </div>

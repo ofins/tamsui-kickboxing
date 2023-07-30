@@ -7,6 +7,12 @@
     url("./fonts/HanWangMingBlack-Regular.ttf") format(truetype);
 }
 
+@font-face {
+  font-family: qingliu;
+  src: local("qingliu"),
+  url('./fonts/qingliu-ttf.ttf') format(truetype);
+}
+
 :root {
   --color1: #000;
   --color2: #52616b;

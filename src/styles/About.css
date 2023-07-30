@@ -40,6 +40,7 @@
     font-family: var(--font-h1);
 }
 
+
 .review--container {
   border-radius: 10px;
   display: flex;
@@ -51,9 +52,15 @@
   box-shadow: var(--bs-1);
   margin-inline: auto;
 }
+
 .review--container .rating {
   display: flex;
   justify-content: end;
+
+}
+
+.review--container .texts {
+  height: 100%;
 }
 .review--container .rating,
 .review--container .texts,
@@ -85,20 +92,25 @@
   }
   .story--container .container img {
     max-width: 450px;
-    width: 50%;
-    aspect-ratio: 0.75;
+    /* width: 50%; */
+    /* aspect-ratio: 1; */
     object-fit: cover;
     box-shadow: var(--bs-1);
   }
   .story--container .container p {
-    width: 70%;
+    width: 90%;
   }
 }
 @media (min-width: 1024px) {
   .review--container {
     margin-inline: unset;
+    height:300px;
   }
   .story--container p {
     font-size:1.2em;
+  }
+  .review--outerBox {
+    display:flex;
+    justify-content: center;
   }
 }

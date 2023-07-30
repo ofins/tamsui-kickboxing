@@ -8,21 +8,21 @@ import { motion } from 'framer-motion'
 const Coaches = () => {
   const navigate = useNavigate();
 
-  const coachList = coachesData.map(coach => (
-    <div data-aos="fade-right" className="coach">
+  const coachList = coachesData.map((coach, index) => (
+    <div key={index} data-aos="fade-right" className="coach">
       <div className="portrait">
         <img src={coach.imageURL} alt={`photo of ${coach.name}`} />
       </div>
       <div className="context">
         <h1>{coach.name}<span>教練</span></h1>
         <div className="lessons">
-          {coach.lessons.map(lesson => (
-            <button onClick={() => navigate(`/${lesson.path}`)}>{lesson.name}</button>
+          {coach.lessons.map((lesson, i) => (
+            <button key={i} onClick={() => navigate(`/${lesson.path}`)}>{lesson.name}</button>
           ))}
         </div>
         <div className="certificates">
-          {coach.certificates.map(certificate => (
-            <p>{certificate}</p>
+          {coach.certificates.map((certificate, i) => (
+            <p key={i}>{certificate}</p>
           ))}
         </div>
       </div>
