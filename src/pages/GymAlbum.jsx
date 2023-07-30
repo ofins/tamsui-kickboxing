@@ -49,7 +49,7 @@ const GymAlbum = () => {
   return (
     <div className="gymAlbum--container">
       <div className="mainFrame">
-        <LazyLoadImage src={`./images/g${photoList[last]}.jpg`} />
+        <img className='mainframe-img' src={`./images/g${photoList[last]}.jpg`} />
         <div className="btn-elements">
           <button onClick={handlePrev}><FontAwesomeIcon icon={faCircleChevronLeft} /></button>
           <button onClick={handleNext}><FontAwesomeIcon icon={faCircleChevronRight} /></button>
@@ -57,7 +57,7 @@ const GymAlbum = () => {
       </div>
       <div className="gallery">
         {filteredArr.map((image, index) => (
-          <LazyLoadImage key={index} src={`./images/g${image}.jpg`} alt={`photo of ${image}`} />
+          <LazyLoadImage className='mainframe-img' effect='blur' key={index} src={`./images/g${image}.jpg`} alt={`photo of ${image}`} />
         ))}
       </div>
     </div>

@@ -15,7 +15,7 @@
     margin-top:3em;
 }
 
-.gymAlbum--container .mainFrame img {
+.mainframe-img {
     width:90%;
     /* height:500px; */
     aspect-ratio: 1.5;
@@ -58,7 +58,7 @@
     max-width:600px;
 }
 
-.gymAlbum--container .gallery img {
+.gallery-img {
     aspect-ratio: 1;
     object-fit: cover;
     box-shadow: var(--bs-2);

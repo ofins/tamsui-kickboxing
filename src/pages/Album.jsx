@@ -18,7 +18,7 @@ const Album = () => {
   return (
     <div className="album--container">
       {photoList.map((image, i) => (
-        <LazyLoadImage key={i} data-aos="zoom-in" src={`./images/${image}.jpg`} alt={`photo of ${image}`} />
+        <LazyLoadImage effect='blur' key={i} data-aos="zoom-in" src={`./images/${image}.jpg`} alt={`photo of ${image}`} />
       ))}
       <ReserveButton/>
     </div>

@@ -13,7 +13,7 @@ const Coaches = () => {
   const coachList = coachesData.map((coach, index) => (
     <div key={index} data-aos="fade-right" className="coach">
       <div className="portrait">
-        <LazyLoadImage src={coach.imageURL} alt={`photo of ${coach.name}`} />
+        <LazyLoadImage effect='blur' src={coach.imageURL} alt={`photo of ${coach.name}`} />
       </div>
       <div className="context">
         <h1>{coach.name}<span>教練</span></h1>
