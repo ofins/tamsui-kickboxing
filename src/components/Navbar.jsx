@@ -3,6 +3,8 @@ import '../styles/Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBarsStaggered, faSortDown } from '@fortawesome/free-solid-svg-icons'
 import { NavLink, useNavigate } from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -53,7 +55,7 @@ const Navbar = () => {
             <div className="dummyNavbar"></div>
             <div className="navbar--container">
                 <div onClick={() => navigate("/")} className="logo">
-                    <img id='mainLogo' src="./images/logo-main.jpg" alt="logo" />
+                    <LazyLoadImage id='mainLogo' src="./images/logo-main.jpg" alt="logo" />
                 </div>
                 <div className="navList">
                     {navList}

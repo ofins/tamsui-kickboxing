@@ -2,14 +2,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import '../styles/Footer.css'
 import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Footer = () => {
     return (
         <div className="footer--container">
             <div className="sec-A">
                 <div className="logo">
-                    <img src="./images/logo-main.jpg" alt="logo" />
-                    <img id='fuyo' src="./images/fuyo_logo1.png" alt="logo" />
+                    <LazyLoadImage src="./images/logo-main.jpg" alt="logo" />
+                    <LazyLoadImage id='fuyo' src="./images/fuyo_logo1.png" alt="logo" />
                 </div>
                 <div className="contact">
                     <div className="address">
@@ -23,10 +25,10 @@ const Footer = () => {
                 </div>
                 <div className="social-icons">
                     <a href='https://liff.line.me/1645278921-kWRPP32q/?accountId=qnl8292y' target='_blank'>
-                        <img src="./svg/line.png" alt="line-icon" />
+                        <LazyLoadImage src="./svg/line.png" alt="line-icon" />
                     </a>
-                    <a href='https://www.facebook.com/TamsuiKB' target='_blank'><img src="./svg/fb.png" alt="facebook-icon" /></a>
-                    <a href='https://www.instagram.com/tamsui_kickboxing/' target='_blank'><img src="./svg/insta.png" alt="square-instagram-icon" /></a>
+                    <a href='https://www.facebook.com/TamsuiKB' target='_blank'><LazyLoadImage src="./svg/fb.png" alt="facebook-icon" /></a>
+                    <a href='https://www.instagram.com/tamsui_kickboxing/' target='_blank'><LazyLoadImage src="./svg/insta.png" alt="square-instagram-icon" /></a>
                 </div>
             </div>
             <div className="sec-B">

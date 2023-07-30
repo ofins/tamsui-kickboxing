@@ -6,6 +6,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import ReserveButton from '../components/ReserveButton'
 import { motion } from 'framer-motion'
 
+
 const Price = () => {
   return (
     <div className='price--container'>

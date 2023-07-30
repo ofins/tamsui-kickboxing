@@ -3,6 +3,8 @@ import '../styles/GymAlbum.css'
 import ReserveButton from '../components/ReserveButton'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleChevronRight, faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const GymAlbum = () => {
   //photoList is the total amount of photos we have in the collection. 
@@ -47,7 +49,7 @@ const GymAlbum = () => {
   return (
     <div className="gymAlbum--container">
       <div className="mainFrame">
-        <img src={`./images/g${photoList[last]}.jpg`} />
+        <LazyLoadImage src={`./images/g${photoList[last]}.jpg`} />
         <div className="btn-elements">
           <button onClick={handlePrev}><FontAwesomeIcon icon={faCircleChevronLeft} /></button>
           <button onClick={handleNext}><FontAwesomeIcon icon={faCircleChevronRight} /></button>
@@ -55,7 +57,7 @@ const GymAlbum = () => {
       </div>
       <div className="gallery">
         {filteredArr.map((image, index) => (
-          <img key={index} src={`./images/g${image}.jpg`} alt={`photo of ${image}`} />
+          <LazyLoadImage key={index} src={`./images/g${image}.jpg`} alt={`photo of ${image}`} />
         ))}
       </div>
     </div>

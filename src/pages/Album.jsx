@@ -1,6 +1,8 @@
 import React from 'react'
 import '../styles/Album.css'
 import ReserveButton from '../components/ReserveButton'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css';
 const Album = () => {
 
   const photoList = []
@@ -16,7 +18,7 @@ const Album = () => {
   return (
     <div className="album--container">
       {photoList.map((image, i) => (
-        <img key={i} data-aos="zoom-in" src={`./images/${image}.jpg`} alt={`photo of ${image}`} />
+        <LazyLoadImage key={i} data-aos="zoom-in" src={`./images/${image}.jpg`} alt={`photo of ${image}`} />
       ))}
       <ReserveButton/>
     </div>
