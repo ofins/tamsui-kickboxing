@@ -1,6 +1,7 @@
 .dummyNavbar {
     height:7%;
     width:100%;
+    background-color: var(--color1);
 }
 .navbar--container {
     background-color: var(--color1);
