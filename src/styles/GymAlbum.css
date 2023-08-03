@@ -1,81 +1,20 @@
 .gymAlbum--container {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height:100vh;
+    padding:1rem;
+    max-width:1200px;
+    margin-inline:auto;
 }
 
-.gymAlbum--container .mainFrame {
-    position:relative;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top:3em;
-}
-
-.mainframe-img {
-    width:90%;
-    /* height:500px; */
-    aspect-ratio: 1.5;
+.gymAlbum--container img {
+    box-shadow: var(--bs-1);
+    width:100%;
+    aspect-ratio: 4/3;
     object-fit: cover;
-    max-width:1000px;
-    box-shadow: var(--bs-2);
-}
-.gymAlbum--container .mainFrame .btn-elements {
-    display: flex;
-    justify-content: space-between;
-    position:absolute;
-    top:100%;
-    width:70%;
-}
-.gymAlbum--container .mainFrame .btn-elements button {
-    background-color: transparent;
-    border-style:none;
-    height:50px;
-    width:50px;
-    border-radius:50%;
-    color:var(--color2);
-    font-size:24px;
-    cursor:pointer;
-    transition: all 0.1s ease;
-}
-.gymAlbum--container .mainFrame .btn-elements button:hover {
-    transform: scale(1.05)
-}
-.gymAlbum--container .mainFrame .btn-elements button:active {
-    transform: scale(0.95);
-    color: var(--color6);
-}
-
-.gymAlbum--container .gallery {
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    width:60%;
-    margin-block:3em;
-    gap:1em;
-    max-width:600px;
-}
-
-.gallery-img {
-    aspect-ratio: 1;
-    object-fit: cover;
-    box-shadow: var(--bs-2);
-}
-
-@media (min-width:768px) {
-    .gymAlbum--container .mainFrame .btn-elements {
-        top:40%;
-        width:101%;
-    }
 }
 
 @media (min-width:1024px) {
-    .gymAlbum--container .mainFrame .btn-elements {
-        width:105%;
-    }
-    .gymAlbum--container .mainFrame .btn-elements button {
-        font-size:32px;
+    .gymAlbum--container {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:1em;
     }
 }
