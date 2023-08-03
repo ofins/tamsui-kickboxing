@@ -36,7 +36,7 @@ const Navbar = () => {
                             <NavLink to={'/muay-thai'}><li>泰拳</li></NavLink>
                             <NavLink to={'/kickboxing'}><li>踢拳</li></NavLink>
                             <NavLink to={'/sanda'}><li>散打</li></NavLink>
-                            <NavLink to={'/kid-sanda'}><li>兒童散打</li></NavLink>
+                            <NavLink to={'/kid-sanda'}><li>兒童班</li></NavLink>
                             <NavLink to={'/one-on-one'}><li>私人專業教練</li></NavLink>
                             <NavLink to={'/advance'}><li>進階班</li></NavLink>
                         </ul>

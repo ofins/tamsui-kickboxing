@@ -1,12 +1,17 @@
 .about--container {
   width: 90%;
   margin-inline: auto;
-  max-width: 1000px;
+  max-width: 1200px;
+}
+
+.story--container {
+  margin-top:3rem;
 }
 
 .story--container .header {
   display: flex;
   align-items: center;
+  margin-top:50px;
 }
 
 .story--container .header .rect {
@@ -31,15 +36,14 @@
 }
 
 .story--container .container p {
-  margin-inline: auto;
+  /* margin-inline: auto; */
 }
 
 .story--container .container span {
-    font-size:8em;
-    color: var(--color6);
-    font-family: var(--font-h1);
+  font-size: 8em;
+  color: var(--color6);
+  font-family: var(--font-h1);
 }
-
 
 .review--container {
   border-radius: 10px;
@@ -56,7 +60,6 @@
 .review--container .rating {
   display: flex;
   justify-content: end;
-
 }
 
 .review--container .texts {
@@ -87,14 +90,11 @@
     flex-wrap: wrap;
     gap: 0.5em;
   }
-  .story--container .container {
-    flex-direction: row;
-  }
+
   .story--container .container img {
     max-width: 450px;
-    /* width: 50%; */
-    /* aspect-ratio: 1; */
     object-fit: cover;
+    margin-right:100px;
     box-shadow: var(--bs-1);
   }
   .story--container .container p {
@@ -102,15 +102,21 @@
   }
 }
 @media (min-width: 1024px) {
+  .story--container {
+    margin-top:5rem;
+  }
+  .story--container .container {
+    flex-direction: row;
+  }
   .review--container {
     margin-inline: unset;
-    height:300px;
+    height: 300px;
   }
   .story--container p {
-    font-size:1.2em;
+    font-size: 1.2em;
   }
   .review--outerBox {
-    display:flex;
+    display: flex;
     justify-content: center;
   }
 }

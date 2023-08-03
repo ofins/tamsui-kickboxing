@@ -8,7 +8,7 @@ const Album = () => {
   const photoList = []
 
   function renderPhoto () {
-    for(let i = 1; i < 35 ; i++) {
+    for(let i = 1; i < 38 ; i++) {
       photoList.push(i)
     }
     return photoList
