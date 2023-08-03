@@ -8,9 +8,11 @@ const ReserveButton = () => {
         預約體驗
     </motion.button></a>
     
-    <motion.a animate={{scale:[0.95, 1, 0.95]}} transition={{type:"tween", duration:3, repeat: Infinity}} className='classBtn' target='_blank' href="https://www.facebook.com/TamsuiKB">
-      <p>課程表</p>
-    </motion.a>
+    <a>
+    <motion.button animate={{y:[0, 20, 0]}} transition={{type:"tween", duration:3, repeat: Infinity}} className='classBtn'>
+        課程表
+    </motion.button>
+    </a>
     </>
   )
 }
