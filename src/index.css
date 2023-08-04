@@ -127,6 +127,11 @@ p {
   top: 60%;
 }
 
+#x-name {
+  font-size:12px;
+  color:white;
+}
+
 @media (min-height:844px) {
   .classBtn {
     top:50%;

@@ -1,4 +1,3 @@
-import React from 'react'
 import '../styles/Album.css'
 import ReserveButton from '../components/ReserveButton'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
