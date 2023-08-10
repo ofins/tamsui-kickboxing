@@ -20,7 +20,10 @@ const ClassDetails = () => {
                 </div>
                 <div className="title">
                     <h1 data-aos="fade-left">{lesson.title} <br/> {lesson.english_title}</h1>
-                    <p data-aos="fade-right">{lesson.description}</p>
+                    {lesson.description.map((desc, index) => (
+                        <p key={index} data-aos="fade-right">{desc}</p>
+                    ))}
+                    {/* <p data-aos="fade-right">{lesson.description}</p> */}
                 </div>
             </div>
             {/* <div className="gallery">
