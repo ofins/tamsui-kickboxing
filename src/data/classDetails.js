@@ -3,7 +3,7 @@ const classDetailsData = [
         class: 'kickboxing',
         title: '踢拳',
         english_title: 'Kickboxing',
-        description: ['踢拳是一項拳腿併用的技擊類運動，透過拳法組合和踢擊動作結合的靈活運用來訓練身體的協調與反應，節奏明快，可高效提升心肺並消耗熱量，屬於高強度漸歇性有氧運動。'],
+        description: ['踢拳是一項拳腿併用的技擊類運動，透過拳法組合和踢擊動作結合的靈活運用來訓練身體的協調與反應，節奏明快，可高效提升心肺並消耗熱量，屬於高強度間歇性有氧運動。'],
         mainImage: './images/kickboxing-main.jpg',
         gallery: ['1', '2', '3']
     },
@@ -19,7 +19,7 @@ const classDetailsData = [
         class: 'sanda',
         title: '散打',
         english_title: 'Sanda',
-        description: ['散打以直拳、擺拳、抄拳、鞭拳、鞭腿、蹬腿、踹腿、摔法等技法組成，強調遠踢、近打、貼身摔的全面性攻防技術，以穩、快、變為基礎，衍伸出各種多元風格的打法， 具備既可攻擊也可防身的高度實用性。'],
+        description: ['散打以直拳、擺拳、抄拳、鞭拳、鞭腿、蹬腿、踹腿、摔法等技法組成，強調遠踢、近打、貼身摔的全面性攻防技術，以穩、快、變為基礎，衍伸出各種多元風格的打法，具備既可攻擊也可防身的高度實用性。'],
         mainImage: './images/sanda-main.jpg',
         gallery: ['1', '2', '3']
     },
