@@ -62,7 +62,7 @@ const Footer = () => {
 
           &nbsp;
           &#10005; 
-          &nbsp;<span id="x-name">SHOW 教練</span>
+          &nbsp;<span id="x-name">楊天秀</span>
         </p>
       </div>
       <div className="sec-dummy"></div>

@@ -35,7 +35,7 @@ const classDetailsData = [
         class: 'kid-sanda',
         title: '兒童班',
         english_title: 'Kid Class',
-        description: ['專為4-12歲的孩童設計，以漸進式的拳腳組合動作，搭配體適能和護身訓練，讓孩子們可以快樂且安全地學習格鬥類運動，除了可強健體魄外，還可提升專注力、全身性的協調與應變能力。'],
+        description: ['專為6-12歲的孩童設計，以漸進式的拳腳組合動作，搭配體適能和護身訓練，讓孩子們可以快樂且安全地學習格鬥類運動，除了可強健體魄外，還可提升專注力、全身性的協調與應變能力。'],
         mainImage: './images/kid-sanda-main.jpg',
         gallery: ['1', '2', '3']
     },
